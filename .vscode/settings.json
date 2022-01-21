@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.xdc": "tcl",
+        "stat.h": "c"
+    }
+}
