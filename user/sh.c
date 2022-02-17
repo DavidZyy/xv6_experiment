@@ -164,6 +164,10 @@ main(void)
         fprintf(2, "cannot cd %s\n", buf+3);
       continue;
     }
+    /**zyy
+     * The next line call fork1, it means the child call runtime and the parent call wait, 
+     * the child to run the shell commad.
+     * */
     if(fork1() == 0)
       runcmd(parsecmd(buf));
     wait(0);
